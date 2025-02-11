@@ -23,7 +23,7 @@ public class OperationsMain {
         System.out.println("10 + 5 = " + operate(10, 5, addition));
         System.out.println("10 - 5 = " + operate(10, 5, subtraction));
         System.out.println("10 x 5 = " + operate(10, 5, multiplication));
-        System.out.println("10 / 5 = " + operate(10, 5, division));
+        System.out.println("10 / 2 = " + operate(10, 2, division));
 
         //anropar operate mot MathOperation-interfacets default-metod, b blir alltid andra int
         System.out.println("10 + 5 och sen * 5 = " + operate(10, 5, addThenMultiply));
@@ -39,10 +39,10 @@ public class OperationsMain {
         };
 
         //anropa lambdas inkl interface-metod
-        System.out.println("7 * 7 = " + square.operate(7));
-        System.out.println("12 * 12 = " + square.operate(12));
+        System.out.println("7 i kvadrat = " + square.operate(7));
+        System.out.println("12 i kvadrat = " + square.operate(12));
         System.out.println("1 står för positivt tal, 0 står för negativt tal:");
-        System.out.println("15 är ett: " + posNegValue.operate(15) + " tal." );
-        System.out.println("-3 är ett: " + posNegValue.operate(-3) + " tal." );
+        System.out.println("15 är ett: " + posNegValue.operate(15) + " tal" );
+        System.out.println("-3 är ett: " + posNegValue.operate(-3) + " tal" );
     }
 }
