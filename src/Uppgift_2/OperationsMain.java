@@ -1,7 +1,9 @@
 package Uppgift_2;
 
+//Första delen av uppgiften använder operate-metoden, andra delen skapar nya lambdas och anropar dem direkt istället
 public class OperationsMain {
 
+    //DEL 1
     private static int operate(int a, int b, MathOperation mathOperation) {
         //anropar och returnerar lambdas från main
         return mathOperation.operation(a, b);
@@ -30,6 +32,7 @@ public class OperationsMain {
         System.out.println("15 + 5 och sen / 5 = " + operate(15, 5, addThenDivide));
         System.out.println("10 - 5 och sen * 5 = " + operate(10, 5, subtractThenMultiply));
 
+        //DEL 2
         //skapar upp lambdas (instanser) för SingleDigitOperation-interfacet
         SingleDigitOperation square = (a) -> a * a;
         SingleDigitOperation posNegValue = (a) -> {
