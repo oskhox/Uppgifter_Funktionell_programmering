@@ -14,5 +14,5 @@ Operate ska:
 • Returnera en integer
 I ditt huvudprogram, skapa upp instanser av SingleDigitOperation där Operate:
 • Returnerar kvadraten på det inskickade värdet (x*x)
-• Returnerar 1 om det inskickade värdet är positivt, 0 annars
-Döp dina instanser av SingleDigitOperation till lämpliga namn
+• Returnerar 1 om det inskickade värdet är positivt, 0 annars. 
+Döp dina instanser av SingleDigitOperation till lämpliga namn.

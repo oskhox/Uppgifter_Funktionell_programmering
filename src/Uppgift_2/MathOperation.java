@@ -1,5 +1,6 @@
 package Uppgift_2;
 
+@FunctionalInterface
 public interface MathOperation {
     int operation(int a, int b);
 

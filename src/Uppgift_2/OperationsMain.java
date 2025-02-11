@@ -1,6 +1,6 @@
 package Uppgift_2;
 
-public class MathOperationMain {
+public class OperationsMain {
 
     private static int operate(int a, int b, MathOperation mathOperation) {
         //anropar och returnerar lambdas från main
@@ -25,9 +25,24 @@ public class MathOperationMain {
         System.out.println("10 x 5 = " + operate(10, 5, multiplication));
         System.out.println("10 / 5 = " + operate(10, 5, division));
 
-        //anropar operate mot interfacets default-metod, b blir alltid andra int
+        //anropar operate mot MathOperation-interfacets default-metod, b blir alltid andra int
         System.out.println("10 + 5 och sen * 5 = " + operate(10, 5, addThenMultiply));
-        System.out.println("10 + 5 och sen / 5 = " + operate(10, 5, addThenDivide));
+        System.out.println("15 + 5 och sen / 5 = " + operate(15, 5, addThenDivide));
         System.out.println("10 - 5 och sen * 5 = " + operate(10, 5, subtractThenMultiply));
+
+        //skapar upp lambdas (instanser) för SingleDigitOperation-interfacet
+        SingleDigitOperation square = (a) -> a * a;
+        SingleDigitOperation posNegValue = (a) -> {
+            if (a >= 1)
+                return 1;
+            else return 0;
+        };
+
+        //anropa lambdas inkl interface-metod
+        System.out.println("7 * 7 = " + square.operate(7));
+        System.out.println("12 * 12 = " + square.operate(12));
+        System.out.println("1 står för positivt tal, 0 står för negativt tal:");
+        System.out.println("15 är ett: " + posNegValue.operate(15) + " tal." );
+        System.out.println("-3 är ett: " + posNegValue.operate(-3) + " tal." );
     }
 }
