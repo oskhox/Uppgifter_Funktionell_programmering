@@ -8,7 +8,6 @@ public class allBooks {
 
     Book b1 = new Book("The Lost City", "Emily Walker", "Adventure", "Deep Blue",
             4, "Sarah Thompson", false, true);
-
     Book b2 = new Book("The History of Ancient Rome", "Marcus Lewis", "History", "Red",
             4, "James Harris", true, false);
     Book b3 = new Book("Whispers in the Wind", "Nora Sullivan", "Romance", "Pastel Pink",
