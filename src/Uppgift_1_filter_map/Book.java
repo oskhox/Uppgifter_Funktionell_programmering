@@ -1,4 +1,4 @@
-package Uppgift_1;
+package Uppgift_1_filter_map;
 
 public class Book {
 

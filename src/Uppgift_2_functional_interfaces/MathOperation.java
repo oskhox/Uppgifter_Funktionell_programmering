@@ -1,4 +1,4 @@
-package Uppgift_2;
+package Uppgift_2_functional_interfaces;
 
 @FunctionalInterface
 public interface MathOperation {

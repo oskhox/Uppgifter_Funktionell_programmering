@@ -1,4 +1,4 @@
-package Uppgift_2;
+package Uppgift_2_functional_interfaces;
 
 //Första delen av uppgiften använder operate-metoden, andra delen skapar nya lambdas och anropar dem direkt istället
 public class OperationsMain {
