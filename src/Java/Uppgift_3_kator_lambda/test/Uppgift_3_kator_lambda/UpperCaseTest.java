@@ -1,7 +1,9 @@
-package Uppgift_3_kator_lambda;
+package Java.Uppgift_3_kator_lambda.test.Uppgift_3_kator_lambda;
 
 import java.util.List;
 import static java.util.Arrays.asList;
+
+import Java.Uppgift_3_kator_lambda.UpperCase;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

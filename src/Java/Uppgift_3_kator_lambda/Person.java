@@ -1,4 +1,4 @@
-package Uppgift_3_kator_lambda;
+package Java.Uppgift_3_kator_lambda;
 
 public class Person {
 

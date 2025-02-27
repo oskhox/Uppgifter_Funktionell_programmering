@@ -1,5 +1,7 @@
-package Uppgift_3_kator_lambda;
+package Java.Uppgift_3_kator_lambda.test.Uppgift_3_kator_lambda;
 
+import Java.Uppgift_3_kator_lambda.KidsNames;
+import Java.Uppgift_3_kator_lambda.Person;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static java.util.Arrays.asList;

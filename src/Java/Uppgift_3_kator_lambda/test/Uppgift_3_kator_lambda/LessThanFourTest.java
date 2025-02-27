@@ -1,5 +1,6 @@
-package Uppgift_3_kator_lambda;
+package Java.Uppgift_3_kator_lambda.test.Uppgift_3_kator_lambda;
 
+import Java.Uppgift_3_kator_lambda.LessThanFour;
 import org.junit.Test;
 import java.util.List;
 import static java.util.Arrays.asList;
