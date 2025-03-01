@@ -2,6 +2,7 @@ package Kotlin.Uppgift_4
 
 class Animal(type: String, numberOfLegs: Int) {
 
+    //med custom getters och setters
     var typeString: String = type
         get() = field
         set(value) {
@@ -45,5 +46,10 @@ fun main(){
     emu.printNumberOfLegs()
     emu.printAllInfo()
 
-    //val list = listOf(cat, beaver, emu)
+    //listor
+    val list = listOf(cat, beaver, emu)
+    for (a in list) a.printAllInfo()
+
+    val mutableList = mutableListOf(cat, beaver, emu)
+    for (a in mutableList) a.printAllInfo()
 }
