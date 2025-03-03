@@ -12,7 +12,7 @@ fun main() {
     }
 
     fun findEntries() {
-        val data: List<Int> = File("src/Inlamning_2/dataAoC1.txt").readLines().map({row -> row.toInt()})
+        val data: List<Int> = File("src/Inlamning_2/dataAoC1.txt").readLines().map { it.toInt() }
         val sum = 2020
         for (i in 0 until data.size) {
             for (j in i + 1 until data.size) {
