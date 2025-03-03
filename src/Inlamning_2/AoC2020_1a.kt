@@ -7,7 +7,6 @@ import java.io.File
 
 private fun findEntries() {
     val data: List<Int> = File("src/Inlamning_2/dataAoC1.txt").readLines().map { row -> row.toInt() }
-
     val sum = 2020
 
     for (i in 0 until data.size) {
