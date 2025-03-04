@@ -4,6 +4,7 @@ import java.io.File
 
 //AoC 2020 day 1(A)
 //Find the two entries that sum to 2020; what do you get if you multiply them together?
+
 fun main() {
 
     fun multiply(entry1: Int, entry2: Int) {
