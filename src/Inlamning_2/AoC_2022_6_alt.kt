@@ -5,7 +5,7 @@ import java.io.File
 //AOC 2022 day 6(A) Todd Ginsberg-ish:
 
 /*
-    Gör om data till indexValue med index och innehåll
+    Gör om data till lista med index och innehåll
     Hittar första vyn som har 4 unika chars genom att mappa
     .toSet() rensar ut dubletter, är den fortfarande 4 lång så är alla chars i just det window:et unika
     .first() ger FÖRSTA värdet i fönstret där villkoret uppfylls
@@ -15,7 +15,7 @@ import java.io.File
 fun main() {
     val data: String = File("src/Inlamning_2/dataAoC6.txt").readText()
 
-    fun findSequence(sequenceSize: Int): Int = data.withIndex() //lista med både index och värde
+    fun findSequence(sequenceSize: Int): Int = data.withIndex()
         .windowed(sequenceSize, 1)
         .first { window ->
             window
