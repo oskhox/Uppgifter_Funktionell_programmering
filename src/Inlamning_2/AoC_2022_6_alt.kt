@@ -7,7 +7,6 @@ import java.io.File
 /*
     Gör om data till lista med index och innehåll
     Hittar första vyn som har 4 unika chars genom att mappa
-    .toSet() rensar ut dubletter, är den fortfarande 4 lång så är alla chars i just det window:et unika
     .first() ger FÖRSTA värdet i fönstret där villkoret uppfylls
     .last() ger svaret, alltså den sista inklusive de fyra chars i window:et
  */
