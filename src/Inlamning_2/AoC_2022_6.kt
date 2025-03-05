@@ -25,5 +25,5 @@ fun main() {
     }
 
     val answer = findSequence(4)
-    println("The first full unique four-long sequence is found after $answer characters.")
+    println("The first full unique sequence is found after $answer characters.")
 }
