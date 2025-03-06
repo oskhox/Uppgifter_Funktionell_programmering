@@ -19,7 +19,6 @@ fun main() {
             }
         } catch (e: IllegalArgumentException) {
             e.printStackTrace()
-            println("No valid sequence found.")
         }
         return -1
     }
