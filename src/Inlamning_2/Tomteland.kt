@@ -2,23 +2,39 @@ package Inlamning_2
 
 class Tomteland {
 
-    //TODO: skapa en datastruktur för att lagra tomtarna och deras relationer i
+    private val hierarchy = mapOf(
+        "Tomten" to listOf("Glader", "Butter"),
+        "Butter" to listOf("Rådjuret", "Nyckelpigan", "Haren", "Räven"),
+        "Räven" to listOf("Myran", "Gråsuggan"),
+        "Myran" to listOf("Bladlusen"),
+        "Glader" to listOf("Tröger", "Trötter", "Blyger"),
+        "Trötter" to listOf("Skumtomten"),
+        "Skumtomten" to listOf("Dammråttan")
+    )
 
-    // current namn är den tomte vars underlydande ni vill ta fram
-    //res är listan som håller alla underlydande
     fun getUnderlings(currentName: String, res: MutableList<String>): List<String> {
-        //TODO, skriv denna metod, glöm inte att den ska vara rekursiv!
-        throw UnsupportedOperationException()
+        val searchResult = hierarchy[currentName]
+
+        if (searchResult != null) {
+            res.addAll(searchResult)
+
+            for (underling in searchResult) {
+                getUnderlings(underling, res)
+            }
+        }
+        return res
     }
+}
 
-    fun main() {
+fun main() {
+    val tomteland = Tomteland()
+    var list: MutableList<String> = mutableListOf()
 
-        //Exempel på anrop till den rekursiva funktionen getUnderlings,
-        //här är tanken att hitta Tröger underlydande
-        //listan fylls på successivt när vi rekurserar:
-
-        var list: MutableList<String> = mutableListOf()
-        println(getUnderlings("Tröger", list))
-
-    }
+    println(tomteland.getUnderlings("Räven", list))
+    list = mutableListOf()
+    println(tomteland.getUnderlings("Tröger", list))
+    list = mutableListOf()
+    println(tomteland.getUnderlings("Glader", list))
+    list = mutableListOf()
+    println(tomteland.getUnderlings("Butter", list))
 }

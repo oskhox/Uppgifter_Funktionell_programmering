@@ -15,8 +15,7 @@ public class TomtelandTest {
     List<String> uTomten = Arrays.asList("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten", "Glader",
             "Butter", "Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen");
     List<String> uGlader = Arrays.asList("Tröger", "Trötter", "Blyger", "Dammråttan", "Skumtomten");
-    List<String> uButter = Arrays.asList("Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran",
-            "Bladlusen");
+    List<String> uButter = Arrays.asList("Rådjuret", "Nyckelpigan", "Haren", "Räven", "Gråsuggan", "Myran", "Bladlusen");
     List<String> uTrötter = Arrays.asList("Dammråttan", "Skumtomten");
     List<String> uSkumtomten = Arrays.asList("Dammråttan");
     List<String> uRäven = Arrays.asList("Gråsuggan", "Myran", "Bladlusen");
